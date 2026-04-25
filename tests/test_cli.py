@@ -4,7 +4,7 @@ from typer.testing import CliRunner
 
 from imagen.cli import app
 
-runner = CliRunner()
+runner = CliRunner(mix_stderr=False)
 
 
 def test_help():
